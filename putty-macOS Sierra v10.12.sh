@@ -6,7 +6,7 @@ echo -e "$(tput setaf 1)\nInstallin serialport, dbdpg, and  expect for perl\n"; 
 echo -e "$(tput setaf 1)#########################################\n"; echo "$(tput sgr0)"
 echo $cwd;
 xcode-select --install;
-wget "https://distfiles.macports.org/MacPorts/MacPorts-2.3.4-10.10-Yosemite.pkg" -O ports.pkg;
+wget "https://distfiles.macports.org/MacPorts/MacPorts-2.3.4-10.12-Sierra.pkg" -O ports.pkg;
 sudo installer -pkg ports.pkg -target /;
 sudo port -v selfupdate;
 sudo port install putty;
